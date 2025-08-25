@@ -7,7 +7,7 @@ import readline from "readline";
 // Baja ollama  de https://ollama.com/ 
 // corre el siguiente comando en la terminal: `ollama run gemma3:1b`
 const ollamaLLM = new Ollama({
-  model: "gemma3:12b", // Cambia el modelo si lo deseas por ejemplo : "mistral:7b", "llama2:7b", etc.
+  model: "gemma3:4b", // Cambia el modelo si lo deseas por ejemplo : "mistral:7b", "llama2:7b", etc.
   temperature: 0.75,
 });
 
@@ -39,7 +39,7 @@ async function main() {
         messages: [
           {
             role: "system",
-            content:"Eres un profesor de historia el cual sabe muchisimo de historia "
+            content:"Sos un simulador vocacional, el cual va hacerme diferentes preguntas para poder saber que carrera estudiar. "
           },
           {
             role: "user",
